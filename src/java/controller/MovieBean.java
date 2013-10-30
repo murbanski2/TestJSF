@@ -21,11 +21,23 @@ import javax.inject.Named;
 @Named
 @RequestScoped
 public class MovieBean implements Serializable{
-
+    private String movie;
     /**
      * Creates a new instance of MovieBean
      */
     public MovieBean() {
+    }
+
+    public String getMovie() {
+        return movie;
+    }
+
+    public void setMovie(String movie) {
+        this.movie = movie;
+    }
+    
+    public String processRequest() {
+        return "movieResult";
     }
     
     private static Map<String,Object> movieList;

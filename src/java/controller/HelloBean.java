@@ -57,7 +57,7 @@ public class HelloBean {
                 break;
             case "3":
                 message = "A Taut Line Hitch is an adjustable loop that " 
-                        + "slips when the rope is slack, but holds tight when"
+                        + "slips when the rope is slack, but holds tight when "
                         + "the rope is taut.  It is often used on tent lines.";
                 break;
             case "4":
