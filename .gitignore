@@ -1,0 +1,26 @@
+# Lines starting with '#' are considered comments. "*" are wildcards
+# STUDENTS: Please do not modify this file.
+#
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+#
+# Class Files
+*.class
+#
+# Package Files
+*.jar
+*.war
+*.ear
+#
+# generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out

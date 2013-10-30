@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Knots Home Page</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Name:
+            <h:inputText  label="Name" value="#{helloBean.name}" tabindex="1" />
+            <h:commandButton value="Find out about knot" 
+                             action="#{helloBean.processRequest()}" 
+                             tabindex="3" />
+            <br/><br/>
+            <h:selectOneMenu label="List1" 
+                             id="menu1" 
+                             hideNoSelectionOption="false"
+                             tabindex="2" 
+                             value="#{helloBean.knotNumber}"   >
+                <f:selectItem itemValue="1" itemLabel="Square Knot" />
+                <f:selectItem itemValue="2" itemLabel="Bowline" />
+                <f:selectItem itemValue="3" itemLabel="Taut Line Hitch" />
+                <f:selectItem itemValue="4" itemLabel="Figure Eight" />
+            </h:selectOneMenu>
+        </h:form>
+    </h:body>
+</html>
+
